@@ -1,11 +1,8 @@
 # Java
-HashSet:
+HashMap:
 1. The underlying data structure is Hashtable. 
-2. Insertion order is not preserved and it is based on hash code of the objects. 
-3. Duplicate objects are not allowed. 
-4. If we are trying to insert duplicate objects we won't get compile time error and 
-runtime error add() method simply returns false. 
-5. Heterogeneous objects are allowed. 
-6. Null insertion is possible.(only once) 
-7. Implements Serializable and Cloneable interfaces but not RandomAccess. 
-8. HashSet is best suitable, if our frequent operation is "Search". 
+2. Duplicate keys are not allowed but values can be duplicated. 
+3. Insertion order is not preserved and it is based on hash code of the keys. 
+4. Heterogeneous objects are allowed for both key and value. 
+5. Null is allowed for keys(only once) and for values(any number of times). 
+6. It is best suitable for Search operations. 
